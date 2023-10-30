@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GreenBank - Simulateur d'emprunt</title>
+</head>
+
+<body>
+    <h1>Green Bank</h1>
+    <h2>Simulateur d'emprunt pour l'achat d'une voiture</h2>
+    <div id="formborder">
+        <label for="typeVehicule">Type de véhicule:</label>
+        <select id="typeVehicule">
+            <option value="citadine">Citadine</option>
+            <option value="cabriolet">Cabriolet</option>
+            <option value="berline">Berline</option>
+            <option value="suv/4x4">SUV/4x4</option>
+        </select><br><br>
+
+        <label for="energieVehicule">Énergie du véhicule:</label>
+        <select id="energieVehicule">
+            <option value="essence">Essence</option>
+            <option value="électrique">Électrique</option>
+            <option value="gaz">Gaz</option>
+            <option value="diesel">Diesel</option>
+            <option value="hybride">Hybride</option>
+        </select><br><br>
+
+        <label for="kilometrage">Kilométrage par an:</label>
+        <select id="kilometrage">
+            <option value="5000-10000">5 000 - 10 000</option>
+            <option value="10000-15000">10 000 - 15 000</option>
+            <option value="15000-20000">15 000 - 20 000</option>
+            <option value="20000-25000">20 000 - 25 000</option>
+            <option value="25000-30000">25 000 - 30 000</option>
+        </select><br><br>
+
+        <label for="anneeVehicule">Année du véhicule:</label>
+        <select id="anneeVehicule">
+            <option value="1960-1970">1960 - 1970</option>
+            <option value="1970-1980">1970 - 1980</option>
+            <option value="1990-2000">1990 - 2000</option>
+            <option value="2000-2010">2000 - 2010</option>
+            <option value="après 2010">Après 2010</option>
+        </select><br><br>
+
+        <label for="passagers">Nombre de passagers:</label>
+        <input type="number" id="passagers" min="1" max="4" value="1"><br><br>
+
+        <button onclick="calculerTauxEmprunt()">Calculer</button><br><br>
+    <div>
+
+    <p id="resultat"></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}    
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(IMG/bg-ecology.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #009717;
+    text-shadow: 2px 2px 4px white;
+}
+
+h2 {
+    color: #555;
+    margin: 20px;
+}
+
+#formborder{
+    width: 320px;
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    width: 200px;    
+}
+
+select, input[type="number"] {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 20px;
+}
